@@ -1,3 +1,8 @@
 source ~/.config/zsh/tmux.zsh
 source ~/.config/zsh/fzf.zsh
 source ~/.config/zsh/completion.zsh
+
+
+export GOBIN=$GOPATH/bin
+
+export PATH=$PATH:$GOBIN

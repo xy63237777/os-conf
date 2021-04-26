@@ -140,12 +140,13 @@ noremap S :w<CR>
 
 " Undo operations
 "noremap l u
-noremap <M-;> 10j
-noremap <M-'> 10k
 
 " Insert Key
 "noremap k i
 "noremap K I
+
+noremap <C-[> 10j
+noremap <C-]> 10k
 
 " make Y to copy till the end of the line
 "nnoremap Y y$
@@ -172,7 +173,7 @@ noremap <LEADER><CR> :nohlsearch<CR>
 
 " Open up lazygit
 "noremap \g :Git 
-"noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
 " nnoremap <c-n> :tabe<CR>:-tabmove<CR>:term lazynpm<CR>
 
 
@@ -762,7 +763,7 @@ set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 set rtp+=/home/david/.linuxbrew/opt/fzf
 nnoremap <c-p> :Leaderf file<CR>
 " noremap <silent> <C-p> :Files<CR>
-noremap <silent> <C-f> :Rg<CR>
+noremap <silent> <C-f> :Ag<CR>
 noremap <silent> <C-h> :History<CR>
 "noremap <C-t> :BTags<CR>
 noremap <silent> <C-l> :Lines<CR>
